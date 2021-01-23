@@ -1,9 +1,10 @@
-from mylib import utils
-from mylib.crypto import MyCrypto
-
 import argparse
 import numpy as np
 from PIL import Image
+
+from mylib.сrypto import MyCrypto
+from mylib import utils
+from mylib import getinfo
 
 # Arguments
 parser = argparse.ArgumentParser(description="Image Encryption")
@@ -18,6 +19,11 @@ CROP_HEIGHT = 8
 
 
 if __name__ == '__main__':
+
+    info = getinfo.exifinfo(args.file)
+    print(info)
+
+    
     mycrypto = MyCrypto(args.key)
 
     # Load image
