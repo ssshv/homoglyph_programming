@@ -3,7 +3,7 @@
 
 
 ## homoglyph_code
-- 攻撃対象を(php_hw)[https://github.com/IldarDavletyarov/php_hw]とする。
+- 攻撃対象を[php_hw](https://github.com/IldarDavletyarov/php_hw)とする。
 - /7/index.phpの23行目の変数$commandのaをaのホモグリフであるа(U+0430)に置換する。
 - ホモグリフに置換することで、escapeshellcmd関数の実行を回避できるために、後で実行されるexec関数においてOSコマンドインジェクションが可能となる。
 
@@ -15,7 +15,7 @@ $string = exec($command, $arr);
 ```
 
 ## homogly_file
-- 攻撃対象を(image_encryption)[https://github.com/PM25/image_encryption]とする。
+- 攻撃対象を[image_encryption](https://github.com/PM25/image_encryption)とする。
 - encrypt.pyというファイルで以下のように自作モジュールを使用している。
 
 ```
